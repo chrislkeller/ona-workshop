@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ONA Workshop: Beginner Tabletop/Handlebars Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="project-styles.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Beginner ONA Tabletop/Handlebars Demo</h1>
+                    <p>Who among you is learning to how to build projects with <a href="https://github.com/jsoma/tabletop" target="blank">Tabletop.js</a> and <a href="http://handlebarsjs.com/" target="blank">Handlebars.js</a>? Here's a list.</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>News Organization</th>
+                                    <th>Twitter Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody id="basic-handlebars-content"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- this is our handlebars template. note the mustache brackets -->
+        <script id="basic-handlebars-template" type="text/x-handlebars-template">
+            <tr>
+                <td>{{name}}</td>
+                <td>{{newsorganization}}</td>
+                <td>{{twitterhandle}}</td>
+            </tr>
+        </script>
+
+        <script type="text/javascript">
+            /*
+                i got in the habit of re-defining the jQuery variable
+                to avoid conflicts with other libraries. That's
+                what we're doing here.
+            */
+            var jqueryNoConflict = jQuery;
+
+            /*
+                this function initializes our query to tabletop.js when the page loads.
+                it references the key of our spreadsheet and then runs a javascript function
+                we identify in the callback parameter
+            */
+            jqueryNoConflict(document).ready(function() {
+                Tabletop.init({
+                    key: '0An8W63YKWOsxdENFbzQ2eGNvZUU1c0tVY2pIYmhIZmc',
+                    callback: displayData
+                });
+            });
+
+            /*
+                here's where we actually display our data.
+            */
+            function displayData(data, tabletop) {
+
+                // we identify the template markup we want to send our data to.
+                var source = $('#basic-handlebars-template').html();
+
+                // we compile the template
+                var template = Handlebars.compile(source);
+
+                // we loop through each data row
+                jqueryNoConflict.each(tabletop.sheets('data_sheet').all(), function (i, data) {
+
+                    // and convert each row to template html
+                    var html = template(data);
+
+                    // and take the result and add it to a HTML element
+                    $("#basic-handlebars-content").append(html);
+                });
+
+            };
+        </script>
+    </body>
+</html>

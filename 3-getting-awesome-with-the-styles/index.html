@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ONA Workshop: Getting down to the job</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/project-styles.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <h1>ONA Workshop: Getting down to the job</h1>
+                <p>Who among you is learning to how to build projects with <a href="https://github.com/jsoma/tabletop" target="blank">Tabletop.js</a> and <a href="http://handlebarsjs.com/" target="blank">Handlebars.js</a>? Here's a list.</p>
+                <div id="basic-handlebars-content"></div>
+            </div>
+        </div>
+
+        <script src="scripts/handlebars-ajax.js"></script>
+        <script src="scripts/swag.min.js"></script>
+        <script type="text/javascript">
+            // i got in the habit of re-defining the jQuery variable
+            // to avoid conflicts with other libraries
+            // that's what we're doing here.
+            var jqueryNoConflict = jQuery;
+
+            // this function initializes our query to tabletop.js when the page loads
+            // it references the key of our spreadsheet
+            // then runs a javascript function we identify in the callback parameter
+            jqueryNoConflict(document).ready(function() {
+                Tabletop.init({
+                    key: '0An8W63YKWOsxdENFbzQ2eGNvZUU1c0tVY2pIYmhIZmc',
+                    callback: displayData,
+                    simpleSheet: false
+                });
+            });
+
+            // display data on template
+            function displayData(data, tabletop) {
+
+                // lets see what the data coming in looks like
+                // fire up the web inspector and go to console
+                console.log(data);
+
+                // here we assign our data to an object we will use in our template
+                var handlebarsData = {
+                    objects: data.data_sheet.elements
+                };
+
+                // this function takes the template name, the css selector you are adding content to and the data
+                renderHandlebarsTemplate('templates/external-handlebars-template.handlebars', '#basic-handlebars-content', handlebarsData);
+            };
+        </script>
+    </body>
+</html>
