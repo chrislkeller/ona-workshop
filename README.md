@@ -6,8 +6,7 @@ Maybe you're hoping reporters will learn how keeping structured data about their
 
 Or maybe you're looking for a tool that help organize/display information when that breaking news event happens.
 
-Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http://handlebarsjs.com/), two little JavaScript libraries that play well with one another and play well with .
-
+Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http://handlebarsjs.com/), two little JavaScript libraries that play well with one another and play well with one another.
 
 **Goal**: Learn how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
 
