@@ -1,6 +1,10 @@
 ### ONA Tabletop.js/Handlebars.js workshop files
 
-Learning how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
+**Goal** Learn how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
+
+* Example projects and process
+* Overview of how these work together
+* Break people into groups -- "get me started," "ready to play," and rock-n-roll.
 
 ### [Demo Links](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos)
 
@@ -9,6 +13,3 @@ Learning how you can use tabletop.js & handlebars.js together opens up really co
 ### [Tutorials and Reference](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
 
 ### And [Remember](https://twitter.com/brianboyer/statuses/233201509842710528)
-
-<blockquote class="twitter-tweet"><p>High-traffic app driven by tabletop.js? Bad idea? Can the Google Spreadsheets API handle election day? :) cc <a href="https://twitter.com/jkeefe">@jkeefe</a> <a href="https://twitter.com/dangerscarf">@dangerscarf</a></p>&mdash; Brian Boyer (@brianboyer) <a href="https://twitter.com/brianboyer/statuses/233201509842710528">August 8, 2012</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
