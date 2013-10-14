@@ -9,16 +9,11 @@ Or maybe you're looking for a tool that help organize/display information when t
 Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http://handlebarsjs.com/), two little JavaScript libraries that play well with one another and play well with .
 
 
-**Goal** Learn how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
+**Goal**: Learn how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
 
-* Example projects and process
-* Overview of how these work together
-* Break people into groups -- "Beginner Project," "Ready to Play," and "Getting Awesome With the Styles".
+**What we'll do**:
 
-### [Project Examples](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples)
-
-### [Getting Started](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started)
-
-### [Demo Links](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos)
-
-### [Tutorials and Reference](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
+* Show off [example projects](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples) from other news organizations
+* Provided an [overview](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started) of how tabletop.js and handlebars.js can work together
+* Dive into [example code](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos) in groups -- "[Beginner Project](https://github.com/chrislkeller/ona-workshop/tree/master/1-beginner-project)," "[Ready to Play](https://github.com/chrislkeller/ona-workshop/tree/master/2-creating-separate-template-files)," and "[Getting Awesome With the Styles](https://github.com/chrislkeller/ona-workshop/tree/master/3-getting-awesome-with-the-styles)".
+* Leave participants with [tutorials and reference materials](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
