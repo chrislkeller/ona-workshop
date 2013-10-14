@@ -7,8 +7,11 @@ Learning how you can use tabletop.js & handlebars.js together opens up really co
 * [Beginner Project](http://www.projects.chrislkeller.com/demos/ona-workshop/1-beginner-project/)
 * [Creating Separate Template Files](http://www.projects.chrislkeller.com/demos/ona-workshop/2-creating-separate-template-files/)
 * [Getting Awesome With the Styles](http://www.projects.chrislkeller.com/demos/ona-workshop/3-getting-awesome-with-the-styles/)
-* [The Washington Post at ONA](http://wpona.com/)
+* The Washington Post at ONA: [Code](https://github.com/yurivictor/wpona); [Demo](http://wpona.com/)
 
+### [Project Examples](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples)
+
+### [Tutorials and Reference](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
 
 ### And [Remember](https://twitter.com/brianboyer/statuses/233201509842710528)
 
