@@ -2,12 +2,7 @@
 
 Learning how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
 
-### Demo Links
-
-* [Beginner Project](http://www.projects.chrislkeller.com/demos/ona-workshop/1-beginner-project/)
-* [Creating Separate Template Files](http://www.projects.chrislkeller.com/demos/ona-workshop/2-creating-separate-template-files/)
-* [Getting Awesome With the Styles](http://www.projects.chrislkeller.com/demos/ona-workshop/3-getting-awesome-with-the-styles/)
-* The Washington Post at ONA: [Code](https://github.com/yurivictor/wpona); [Demo](http://wpona.com/)
+### [Demo Links](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos)
 
 ### [Project Examples](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples)
 
