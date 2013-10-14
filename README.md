@@ -15,8 +15,10 @@ Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http:
 * Overview of how these work together
 * Break people into groups -- "Beginner Project," "Ready to Play," and "Getting Awesome With the Styles".
 
-### [Demo Links](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos)
-
 ### [Project Examples](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples)
+
+### [Getting Started](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started)
+
+### [Demo Links](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos)
 
 ### [Tutorials and Reference](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
