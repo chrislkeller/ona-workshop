@@ -1,13 +1,12 @@
 ### ONA Tabletop.js/Handlebars.js workshop files
 
-More coming soon...
+Learning how you can use tabletop.js & handlebars.js together opens up really cool custom-mini-CMS possibilities and ways to manage data-driven projects and interactives.
 
 ### Demo Links
 
 * [Beginner Project](http://www.projects.chrislkeller.com/demos/ona-workshop/1-beginner-project/)
 * [External templates](http://www.projects.chrislkeller.com/demos/ona-workshop/2-creating-separate-template-files/)
 * [Extending the project](http://www.projects.chrislkeller.com/demos/ona-workshop/3-getting-awesome-with-the-styles/)
-* 
 
 ### And [Remember](https://twitter.com/brianboyer/statuses/233201509842710528)
 
