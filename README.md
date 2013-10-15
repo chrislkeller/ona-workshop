@@ -16,3 +16,5 @@ Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http:
 * Provided an [overview](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started) of how tabletop.js and handlebars.js can work together
 * Dive into [example code and demos](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos) in groups -- "[Beginner Project](https://github.com/chrislkeller/ona-workshop/tree/master/1-beginner-project)," "[Ready to Play](https://github.com/chrislkeller/ona-workshop/tree/master/2-creating-separate-template-files)," and "[Getting Awesome With the Styles](https://github.com/chrislkeller/ona-workshop/tree/master/3-getting-awesome-with-the-styles)".
 * Leave participants with [tutorials and reference materials](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
+
+View the [wiki](https://github.com/chrislkeller/ona-workshop/wiki).
