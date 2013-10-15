@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<!-- Chartbeat Time Capture -->
+	<script type="text/javascript">var _sf_startpt=(new
+		Date()).getTime();
+	</script>
+	
+	<title>Tabletop.js and Handbars.js Demo for ONA | WNYC</title>
+
+	<meta name="author" content="WNYC Data News" />
+	<meta name="description" content="A dataviz project by the WNYC Data News Team." />
+	<meta name="robots" content="index, follow" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	
+	<!-- Web app-able -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+	<!-- all the CSS -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<!-- all the JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/tabletop.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+
+<!-- Start Google Analytic Code --> 
+	<script type="text/javascript">
+
+	 var _gaq = _gaq || [];
+	 _gaq.push(['_setAccount', 'UA-283599-23']);
+	 _gaq.push(['_trackPageview']);
+
+	 (function() {
+	   var ga = document.createElement('script'); ga.type =
+	'text/javascript'; ga.async = true;
+	   ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+	'http://www') + '.google-analytics.com/ga.js';
+	   var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+	 })();
+
+	</script>
+<!-- End Google Analytic Code -->
+
+<style>
+
+#grid {
+	overflow: hidden;
+	margin: 20px 0;
+	width: 100%;
+	height: 500px;
+	background: #ddd;
+	position: relative;
+}
+
+#grid li {
+	font-size: 18px;
+	z-index: 100;
+}
+
+#grid #xAxis {
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+
+#grid #yAxis {
+	height: 100%;
+	width: 1px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	z-index: 1;
+}
+
+#grid span.gridLabel{
+	background: #fff;
+	color: #000;
+	padding: 5px;
+	z-index: 2;
+	position: absolute;
+}
+	#grid .left {
+		left: 0;
+		top: 47%;
+	}
+	#grid .right {
+		right: 0;
+		top: 47%;
+	}
+	#grid .top {
+		top: 0;
+		left: 45.5%;
+	}
+	#grid .bottom {
+		bottom: 0;
+		left: 48%;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+	
+	<a href="index.html" id="example">First example</a>
+	<h1 title="Get it?">Fancy positioning via Tabletop.js<br> (╯°□°）╯︵ ┻━┻</h1>
+	
+	<ul id="grid"> 
+		<span class="gridLabel top">Really cool</span>
+		<span class="gridLabel bottom">Meh</span>
+		<span class="gridLabel left">Human</span>
+		<span class="gridLabel right">Animal</span>
+		<div id="xAxis"> </div>
+		<div id="yAxis"> </div>
+		
+	</ul>
+	
+</div><!-- #container -->
+
+
+
+<!-- Template for table of results -->
+<script id="days" type="text/x-handlebars-template">
+		<li style="position: absolute; top: {{top}}%; left: {{left}}%;">
+			{{{plots}}}
+		</li>
+</script>
+
+<script type="text/javascript">
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0AmUc6Li4CgEQdHloZnFCWnQxcWVrUnpwSEx4TzdEc0E&output=html';
+
+  $(document).ready( function() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     parseNumbers: true } );
+  });
+
+  function showInfo(data, tabletop) {
+    alert("Successfully processed!")
+    console.log(data);
+  }
+
+function showInfo(data, tabletop) {
+    var source   = $("#days").html();
+    var template = Handlebars.compile(source);
+
+    $.each( tabletop.sheets("Sheet3").all(), function(i, cat) {
+      var html = template(cat);
+      $("#grid").append(html);
+    });
+  }
+
+  document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");
+
+</script>
+
+<script type="text/javascript" src="http://project.wnyc.org/assets/js/retina.js"></script>
+
+<!-- Begin Chartbeat Code -->
+	<script type="text/javascript">
+	var _sf_async_config={uid:4030,domain:"project.wnyc.org"};
+	(function(){
+	 function loadChartbeat() {
+	   window._sf_endpt=(new Date()).getTime();
+	   var e = document.createElement('script');
+	   e.setAttribute('language', 'javascript');
+	   e.setAttribute('type', 'text/javascript');
+	   e.setAttribute('src',
+	      (("https:" == document.location.protocol) ?
+	"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
+	"http://static.chartbeat.com/") +
+	      "js/chartbeat.js");
+	   document.body.appendChild(e);
+	 }
+	 var oldonload = window.onload;
+	 window.onload = (typeof window.onload != 'function') ?
+	    loadChartbeat : function() { oldonload(); loadChartbeat(); }; })();
+	</script>
+<!-- End Chartbeat Code -->
+
+</body>
+
+</html>

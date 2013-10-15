@@ -1,0 +1,373 @@
+/*      
+
+Styles library for legend treatments      
+
+*/
+
+
+/* 
+
+Here's a legend that spans full widths up to 550px, then collapses into a pulldown 
+
+*/
+
+#legend {
+	height: 45px;
+	z-index: 5;
+	padding: 0;
+}
+	#legendWide {
+		width: 100%;
+		background: #333;
+		overflow: visible;
+	}
+	#legendWide * {
+		padding: 0;
+		margin: 0;
+	}
+	#legendWide .keyTitle {
+		font-size: 12px;
+		font-weight: 900;
+		text-transform: uppercase;	
+		letter-spacing: 0.1em;
+		position: relative;
+		float: left;
+		top: 15px;
+		margin: 0 0 0 20px;
+	}
+	#legendWide ul {
+		float: left;
+	}
+	#legendWide ul li {
+		float: left;
+		list-style: none;
+		margin: 0 0 0 15px;
+	}
+	#legendWide ul li img {
+		position: relative;
+		top: 8px;
+		margin: 0 10px 0 0;
+	}
+	#legendWide ul li span {
+		position: relative;
+		top: 2px;
+	}
+	#legendSet {
+		display: none;
+	}
+
+@media handheld, only screen and (max-width: 550px) {
+
+	#legendWide {
+		display: none;
+	}
+
+	#legendSet, #legendToggle {
+		display: block;
+		width: 100%;
+		height: 45px;
+		margin: 0;
+		overflow: visible;
+	}
+	#legendSet {
+		color: #fff;
+		background-color: #444;
+		overflow: visible;
+		position: relative;
+		font-size: 14px;
+	}
+
+	#legendToggle {
+		height: 100%;
+		cursor: pointer;
+		background-color: #444;
+	}
+		#legendToggle span {
+			font-size: 12px;
+			font-weight: 900;
+			text-transform: uppercase;	
+			letter-spacing: 0.1em;
+			position: absolute;
+			top: 15px;
+			left: 20px;
+		}
+		#legendToggle i.iconRight {
+			position: absolute;
+			top: 15px;
+			right: 20px;
+		}
+	#legendDrawer {
+		background-color: #444;
+		position: absolute;
+		top: 45px;
+		left: 0px;
+		z-index: 500;
+		display: none;
+		padding: 10px 0;
+		width: 100%;
+	} 
+		#legendDrawer ul {
+			padding: 0 15px 0 20px;
+		}
+		#legendDrawer ul li {
+			list-style: none;
+			clear: both;
+			float: left;
+			margin: 0 0 10px 0;
+		}
+		#legendDrawer img {
+			display: block;
+			margin: -3px 0 0 0;
+			padding: 0 10px 0 0;		
+			float: left;
+		}
+}
+
+
+/* 
+HTML
+
+<div id="legend">
+	
+	<div id="legendWide">
+		<span class="keyTitle">Flood Zones:</span>
+		<ul>
+			<li><span><img src="img/icon_cat1.png" alt="IMG" width="25" height="25">Category 1</span></li>
+			<li><span><img src="img/icon_cat2.png" alt="IMG" width="25" height="25">Category 2</span></li>
+			<li><span><img src="img/icon_cat3.png" alt="IMG" width="25" height="25">Category 3</span></li>
+			<li><span><img src="img/icon_cat4.png" alt="IMG" width="25" height="25">Category 4</span></li>
+		</ul>
+	</div>
+
+	<div id="legendSet">
+		<div id="legendToggle">
+			<span>View Flood Zones key</span>
+			<i class="iconRight icon-caret-down"></i>
+		</div>
+		<div id="legendDrawer">
+			<ul>
+				<li><span><img src="img/icon_cat1.png" alt="IMG" width="25" height="25">Category 1</span></li>
+				<li><span><img src="img/icon_cat2.png" alt="IMG" width="25" height="25">Category 2</span></li>
+				<li><span><img src="img/icon_cat3.png" alt="IMG" width="25" height="25">Category 3</span></li>
+				<li><span><img src="img/icon_cat4.png" alt="IMG" width="25" height="25">Category 4</span></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+*/
+
+
+/* 
+
+Here's a legend with a zoombox to the left, and a pulldown key to the right
+Pulldown expands to full width at 500 and narrower 
+
+*/
+
+#legend {
+	z-index: 5;
+	padding: 0;
+	height: 50px;
+}
+
+	#legendSet {
+		color: #fff;
+		background-color: #333;
+		font-size: 14px;
+		position: relative;
+		float: right;
+		overflow: visible;
+		width: 250px;
+		height: 50px;
+	}
+
+		#legendToggle {
+			cursor: pointer;
+			height: 100%;
+		}
+			#legendToggle span {
+				font-family: 'Lato', helvetica, arial, sans-serif;	
+				font-size: 12px;
+				font-weight: 900;
+				text-transform: uppercase;	
+				letter-spacing: 0.1em;
+				position: absolute;
+				top: 18px;
+				left: 20px;
+			}
+			#legendToggle i.iconRight {
+				position: absolute;
+				top: 18px;
+				right: 20px;
+			}
+			
+		#legendDrawer {
+			background-color: #333;
+			position: absolute;
+			top: 50px;
+			left: 0px;
+			z-index: 500;
+			display: none;
+			padding: 10px 0;
+			width: 100%;
+		} 
+			#legendDrawer ul {
+				padding: 0 15px 0 20px;
+			}
+			#legendDrawer ul li {
+				list-style: none;
+				clear: both;
+				float: left;
+				margin: 0 0 10px 0;
+			}
+			#legendDrawer img {
+				display: inline;
+				margin: -4px 0 0 0;
+				padding: 0 10px 0 0;		
+				float: left;	
+			}
+			
+	#zoomTo {
+		padding: 8px 0 0 20px;
+		float: left;
+	}		
+	#zoombox {
+	    height: 30px;
+		border: 0;
+		font-size: 14px;
+		font-family: 'Lato', helvetica, arial, sans-serif;
+		padding: 0 10px;
+	}
+	#zoombutton {
+		color: #fff;
+		background: #000;
+		border: 0px;
+		position: relative;
+		margin: 0 0 0 5px;
+	    padding: 10px 15px;
+		font-family: 'Lato', helvetica, arial, sans-serif;	
+		font-size: 12px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+		#zoombutton:hover {
+			background: #e51133;
+		}
+
+@media handheld, only screen and (max-width: 500px) {
+	#legend {
+		height: 100px;
+	}
+	#legendSet, #legendToggle {
+		display: block;
+		width: 100%;
+		height: 25px;
+		margin: 6px 0 0 0;
+	}
+	#legendSet {
+		height: 50px;
+		float: left;
+	}
+	#legendToggle i.iconRight {
+		top: 18px;
+		right: 20px;
+	}
+	#legendDrawer {
+		top: 50px;
+	}
+}
+
+@media handheld, only screen and (max-width: 200px) {
+	#zoombox {
+		width: 75px;
+	}
+}
+	
+/* 
+
+HTML
+
+<div id="legend">
+	
+	<input type="text" id="zoombox" placeholder="Zoom to a location"></input>
+       <button id="zoombutton">Go</button>
+
+	<div id="legendSet">
+		<div id="legendToggle">
+			<span>View key</span>
+			<i class="iconRight icon-caret-down"></i>
+		</div>
+		<div id="legendDrawer">
+			<ul>
+				<li><span><img src="http://maps.google.com/mapfiles/kml/paddle/blu-blank.png" alt="IMG" width="25" height="25">In service</span></li>
+				<li><span><img src="http://maps.google.com/mapfiles/kml/paddle/red-blank.png" alt="IMG" width="25" height="25"> Out of service</span></li>
+				<li><span><img src="http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png" alt="IMG" width="25" height="25"> Possibly out of order</span></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+*/
+
+
+/*
+
+Toggles
+
+*/
+
+#legend {
+	overflow: hidden;
+}
+	#legend ul, #legend ul li {
+		float: left;
+		list-style: none;
+		padding: 15px 5px 15px 20px;
+		overflow: visible;
+	}
+	#legend ul li {
+		padding: 0;
+		margin: 0 10px 0 0;
+	}
+	.legendLabel {
+		font-size: 12px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	#legend a {
+		color: #fff;
+		text-decoration: none;
+		padding: 7px 10px;
+		background-color: #000;
+	}
+	#legend a:hover, #legend a.selected {
+		color: #fff;
+		text-decoration: none;
+		padding: 7px 10px;
+		background-color: #e51133;
+		cursor: pointer;
+	}
+	
+/* 
+
+HTML
+
+<div id="legend">
+	<ul>
+		<li class="legendLabel">Zoom to </li>
+		<li><a href='#13/40.5698/-74.0823'>Staten Island</a> </li> 
+		<li><a href='#13/40.5779/-73.8789'>The Rockaways</a> </li>
+	</ul>
+	<ul>
+		<li class="legendLabel">Toggle </li>
+		<li><a>Historical</a> </li>   
+		<li><a>Proposed</a> </li>
+	</ul>
+</div>
+
+*/

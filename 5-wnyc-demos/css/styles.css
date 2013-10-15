@@ -1,0 +1,43 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+body {
+	background: #eee;
+	color: #333;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}	
+
+#example {
+	margin: 0 20px 20px 20px;
+	font-size: 20px;
+	float: right;
+	color: #ff3300;
+	text-decoration: none;
+}
+	#example:hover {
+		text-decoration: underline;
+	}
+
+h1 {
+	margin: 20px;
+}
+
+
+
+
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 375px) {
+
+
+}
+
+

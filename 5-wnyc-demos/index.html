@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<!-- Chartbeat Time Capture -->
+	<script type="text/javascript">var _sf_startpt=(new
+		Date()).getTime();
+	</script>
+	
+	<title>Tabletop.js and Handbars.js Demo for ONA | WNYC</title>
+
+	<meta name="author" content="WNYC Data News" />
+	<meta name="description" content="A dataviz project by the WNYC Data News Team." />
+	<meta name="robots" content="index, follow" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	
+	<!-- Web app-able -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+	<!-- all the CSS -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<!-- all the JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/tabletop.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+
+<!-- Start Google Analytic Code --> 
+	<script type="text/javascript">
+
+	 var _gaq = _gaq || [];
+	 _gaq.push(['_setAccount', 'UA-283599-23']);
+	 _gaq.push(['_trackPageview']);
+
+	 (function() {
+	   var ga = document.createElement('script'); ga.type =
+	'text/javascript'; ga.async = true;
+	   ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+	'http://www') + '.google-analytics.com/ga.js';
+	   var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+	 })();
+
+	</script>
+<!-- End Google Analytic Code -->
+
+<style>
+
+.aCand {
+	background: #ffffff;
+	color: #333;
+	margin: 20px;
+	padding: 10px;
+	position: relative;
+	border-top: 3px solid #ccc;
+}
+
+	h3 {
+		font-size: 20px;
+		margin: 0 0 10px 0;
+	}
+
+	.aCand span {
+		font-style: normal;
+		margin: 0 0 5px 0;
+		display: block;
+	}
+	
+	.cand_bar {
+		display: block;
+		height: 10px;
+		background: #000000;
+		
+	}
+	
+	span.gender {
+		display: block;
+		clear: both;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 0.07em;
+		padding: 5px;
+		color: #fff;
+		width: 55px;
+		margin: 10px 0 0 0;
+		position: relative;
+		bottom: -10px;
+		left: -10px;
+		text-align: center;
+		background: #ff0099;
+	}
+	span.male {background: #66cc66;}
+	span.female {background: #cc66cc;}
+	
+	.aCand img {
+		float: right;
+	}
+	
+	.dem {
+		border-top: 3px solid #0099ff;
+	}
+	.GOP {
+		border-top: 3px solid #ff6666;
+	}
+	.winner {
+		background: yellow;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+	<a href="index2.html" id="example">Next example</a>
+	<h1 title="Get it?">Fake election via Tabletop.js<br> (╯°□°）╯︵ ┻━┻</h1>
+	
+</div><!-- #container -->
+
+
+
+<!-- Template for table of results -->
+<script id="candidates" type="text/x-handlebars-template">
+		<div class="aCand {{party}} {{#if winner}}{{winner}}{{/if}}">
+		{{#if winner}}
+			<img src="http://www.themaxfoundation.org/gallery/images/WinnerRibbon.png" alt="Winner!">
+		{{/if}}
+			<h3>{{name}}</h3>
+			<span><strong>{{votes}}</strong> votes</span>
+			<div class="cand_bar" style="width: {{crunched}}%"> </div>
+			<span class="gender {{gender}}">{{gender}}</span>
+		</div>
+</script>
+
+<script type="text/javascript">
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0AmUc6Li4CgEQdHloZnFCWnQxcWVrUnpwSEx4TzdEc0E&output=html';
+
+  $(document).ready( function() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     parseNumbers: true } );
+  });
+
+  function showInfo(data, tabletop) {
+    alert("Successfully processed!")
+    console.log(data);
+  }
+
+function showInfo(data, tabletop) {
+    var source   = $("#candidates").html();
+    var template = Handlebars.compile(source);
+
+    $.each( tabletop.sheets("Sheet1").all(), function(i, cat) {
+      var html = template(cat);
+      $("#container").append(html);
+    });
+  }
+
+  document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");
+
+</script>
+
+<script type="text/javascript" src="http://project.wnyc.org/assets/js/retina.js"></script>
+
+<!-- Begin Chartbeat Code -->
+	<script type="text/javascript">
+	var _sf_async_config={uid:4030,domain:"project.wnyc.org"};
+	(function(){
+	 function loadChartbeat() {
+	   window._sf_endpt=(new Date()).getTime();
+	   var e = document.createElement('script');
+	   e.setAttribute('language', 'javascript');
+	   e.setAttribute('type', 'text/javascript');
+	   e.setAttribute('src',
+	      (("https:" == document.location.protocol) ?
+	"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
+	"http://static.chartbeat.com/") +
+	      "js/chartbeat.js");
+	   document.body.appendChild(e);
+	 }
+	 var oldonload = window.onload;
+	 window.onload = (typeof window.onload != 'function') ?
+	    loadChartbeat : function() { oldonload(); loadChartbeat(); }; })();
+	</script>
+<!-- End Chartbeat Code -->
+
+</body>
+
+</html>
