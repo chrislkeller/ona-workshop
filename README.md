@@ -13,8 +13,8 @@ Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http:
 **What we'll do**:
 
 * Get an idea of what you would like to come away with from the presentation.
-* Show some example projects that we developed for ONA, and offer links to some [from other news organizations](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples) from other news organizations
-* Provide an higher-level [overview](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started) of how tabletop.js and handlebars.js can work together from a setup, JavaScript and design/CSS perspsective.
+* Show some example projects ([KPCC](http://www.projects.chrislkeller.com/demos/ona-workshop/3-getting-awesome-with-the-styles/), [WNYC](http://project.wnyc.org/ona-handlebars-demo/), [WaPo](http://wpona.com/)) that we developed for ONA, and offer links to projects [from other news organizations](https://github.com/chrislkeller/ona-workshop/wiki/Project-Examples).
+* Provide an [overview](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started) of the concepts behind tabletop.js and handlebars.js can work together from a setup, JavaScript and design/CSS perspsective.
 * Dive into [example code and demos](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos) in groups -- "[Beginner Project](https://github.com/chrislkeller/ona-workshop/tree/master/1-beginner-project)," "[Ready to Play](https://github.com/chrislkeller/ona-workshop/tree/master/2-creating-separate-template-files)," and "[Getting Awesome With the Styles](https://github.com/chrislkeller/ona-workshop/tree/master/3-getting-awesome-with-the-styles)".
 * Leave participants with [tutorials and reference materials](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
 
