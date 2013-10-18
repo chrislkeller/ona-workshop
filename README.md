@@ -1,5 +1,7 @@
 ### ONA Tabletop.js/Handlebars.js workshop files
 
+[bit.ly/tabletop-repo](http://bit.ly/tabletop-repo)
+
 Maybe you've used pre-packaged vendor tools to create digital news presentations, but you aren't quite ready to tackle full-stack programming, database management and server setup.
 
 Maybe you're hoping reporters will learn how keeping structured data about their beat can benefit the organization.
