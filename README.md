@@ -1,8 +1,9 @@
 ### ONA Tabletop.js/Handlebars.js workshop files
 
-* **Participants**: [Who you are and what you'd like to learn](http://bit.ly/onatabletop)
-* **GitHub Repo**: [bit.ly/onatabletop-repo](http://bit.ly/onatabletop-repo)
-* **Resources**: [wiki](https://github.com/chrislkeller/ona-workshop/wiki).
+* **Sign in:**: [Who you are and what you'd like to learn](http://bit.ly/onatabletop)
+* **See the result**: [Who you are and what you'd like to learn](http://www.projects.chrislkeller.com/demos/ona-workshop/3-getting-more-awesome/)
+* **View the code**: [bit.ly/onatabletop-repo](http://bit.ly/onatabletop-repo)
+* **Resources**: [wiki](https://github.com/chrislkeller/ona-workshop/wiki)
 
 Maybe you've used pre-packaged vendor tools to create digital news presentations, but you aren't quite ready to tackle full-stack programming, database management and server setup.
 
