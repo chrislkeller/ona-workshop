@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Beginner ONA Tabletop/Handlebars Demo</h1>
-                    <p>Who among you is learning to how to build projects with <a href="https://github.com/jsoma/tabletop" target="blank">Tabletop.js</a> and <a href="http://handlebarsjs.com/" target="blank">Handlebars.js</a>? Here's a list.</p>
+                    <p>Who among you at #ONA13 is learning to how to build projects with <a href="https://github.com/jsoma/tabletop" target="blank">Tabletop.js</a> and <a href="http://handlebarsjs.com/" target="blank">Handlebars.js</a>? We're making a list.</p>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -24,6 +24,8 @@
                                     <th>Name</th>
                                     <th>News Organization</th>
                                     <th>Twitter Handle</th>
+                                    <th>Would Like To Learn</th>
+                                    <th>Link to Project</th>
                                 </tr>
                             </thead>
                             <tbody id="basic-handlebars-content"></tbody>
@@ -38,6 +40,8 @@
                 <td>{{name}}</td>
                 <td>{{newsorganization}}</td>
                 <td>{{twitterhandle}}</td>
+                <td>{{wouldliketolearn}}</td>
+                <td>{{#if linktoproject}}<a href="{{linktoproject}}" target="_blank">View</a>{{/if}}</td>
             </tr>
         </script>
 
