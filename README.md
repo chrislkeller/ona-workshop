@@ -1,7 +1,7 @@
 ### ONA Tabletop.js/Handlebars.js workshop files
 
 * **Sign in**: [Who you are and what you'd like to learn](http://bit.ly/onatabletop)
-* **See the result**: [Who you are and what you'd like to learn](http://www.projects.chrislkeller.com/demos/ona-workshop/3-getting-more-awesome/)
+* **See the result**: [An example of a tabletop/handlebars project](http://jsfiddle.net/chrislkeller/VSPJH/embedded/result/)
 * **View the code**: [bit.ly/onatabletop-repo](http://bit.ly/onatabletop-repo)
 * **Resources**: [wiki](https://github.com/chrislkeller/ona-workshop/wiki)
 
