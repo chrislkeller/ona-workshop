@@ -1,7 +1,8 @@
 ### ONA Tabletop.js/Handlebars.js workshop files
 
-* **GitHub Repo**: [bit.ly/tabletop-repo](http://bit.ly/tabletop-repo)
 * **Participants**: [Who you are and what you'd like to learn](http://bit.ly/onatabletop)
+* **GitHub Repo**: [bit.ly/onatabletop-repo](http://bit.ly/onatabletop-repo)
+* **Resources**: [wiki](https://github.com/chrislkeller/ona-workshop/wiki).
 
 Maybe you've used pre-packaged vendor tools to create digital news presentations, but you aren't quite ready to tackle full-stack programming, database management and server setup.
 
@@ -20,5 +21,3 @@ Enter [tabletop.js](https://github.com/jsoma/tabletop) and [handlebars.js](http:
 * Provide an [overview](https://github.com/chrislkeller/ona-workshop/wiki/Getting-Started) of the concepts behind tabletop.js and handlebars.js can work together from a setup, JavaScript and design/CSS perspsective.
 * Partner up and dive into [example code and demos](https://github.com/chrislkeller/ona-workshop/wiki/Links-to-Demos) using JSFiddle or local development environments.
 * Leave participants with [tutorials and reference materials](https://github.com/chrislkeller/ona-workshop/wiki/Tutorials-and-Reference)
-
-View the [wiki](https://github.com/chrislkeller/ona-workshop/wiki).
